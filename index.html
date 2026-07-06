@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HanStudy</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>🌸 HanStudy</h1>
+</header>
+
+<main>
+
+<section id="home" class="screen active">
+
+  <div class="card">
+    <h2>Willkommen zurück!</h2>
+    <p>Heute wartet deine Reise nach Korea auf dich.</p>
+  </div>
+
+  <div class="card">
+    <h3>🏆 Level 1</h3>
+
+    <div class="xp-bar">
+      <div class="xp-fill"></div>
+    </div>
+
+    <p>40 / 100 XP</p>
+  </div>
+
+  <div class="card">
+    <h3>🔥 Streak</h3>
+    <p>1 Tag</p>
+  </div>
+
+  <button class="mainButton" onclick="showScreen('lernen')">
+    Lernen starten
+  </button>
+
+</section>
+
+<section id="lernen" class="screen">
+
+  <div class="card">
+
+    <h2>🌸 Welt 1</h2>
+
+    <h3>Begrüßungen</h3>
+
+    <p>0 % abgeschlossen</p>
+
+    <button class="mainButton">
+      Erste Lektion
+    </button>
+
+  </div>
+
+</section>
+
+<section id="reisebuch" class="screen">
+
+  <div class="card">
+
+    <h2>📖 Reisebuch</h2>
+
+    <p>Hier erscheint später dein Lernfortschritt.</p>
+
+  </div>
+
+</section>
+
+<section id="profil" class="screen">
+
+  <div class="card">
+
+    <h2>👤 Profil</h2>
+
+    <p>Name: HanStudy Nutzer</p>
+
+    <p>Level 1</p>
+
+    <p>XP: 40</p>
+
+    <p>🔥 1 Tag</p>
+
+  </div>
+
+</section>
+
+</main>
+
+<nav>
+
+<button onclick="showScreen('home')">
+🏠<br>Home
+</button>
+
+<button onclick="showScreen('lernen')">
+📚<br>Lernen
+</button>
+
+<button onclick="showScreen('reisebuch')">
+📖<br>Reisebuch
+</button>
+
+<button onclick="showScreen('profil')">
+👤<br>Profil
+</button>
+
+</nav>
+
+<script src="script.js"></script>
+
+</body>
+</html>
