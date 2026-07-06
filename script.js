@@ -62,3 +62,28 @@ function loadProgress() {
 }
 
 loadProgress();
+function openLesson(id){
+
+    const lesson = lessons.find(l => l.id === id);
+
+    document.getElementById("lessonTitle").textContent =
+    lesson.title;
+
+    document.getElementById("lessonPronunciation").textContent =
+    lesson.pronunciation;
+
+    document.getElementById("lessonTranslation").textContent =
+    lesson.translation;
+
+    document.getElementById("lessonExplanation").textContent =
+    lesson.explanation;
+
+    showScreen("lesson");
+
+}
+
+function startQuiz(){
+
+    alert("Das Quiz kommt im nächsten Update 🌸");
+
+}
